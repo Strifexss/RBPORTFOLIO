@@ -1,14 +1,17 @@
 import styled from 'styled-components'
-import RBlogo from './imgs/RBLogo.png'
+import LogoNany from './imgs/LogoNanyPng.png'
 import {Fade} from "react-reveal"
 import InstagramIcon from ".//imgs/Icons/InstagramIcon.png"
 import GmailIcon from ".//imgs/Icons/GmailIcon.png"
 import WhatsappIcon from ".//imgs/Icons/WhatsappIcon.png"
+
+
 const Main = styled.div`
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 85% 15%;
+    scroll-snap-align: center;
 `
 
 const Principal = styled.div`
@@ -21,7 +24,8 @@ const Principal = styled.div`
  
     img {
         width: 50rem;
-        height: 50rem;
+        height: 40rem;
+        transform: translateY(-5rem);
     }
 
     section {
@@ -29,7 +33,7 @@ const Principal = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-       
+
         h1 {
         font-size: 4rem;
         text-align: center;
@@ -51,7 +55,7 @@ const Principal = styled.div`
         color: #fff;
         cursor: pointer;
         transform: scale(90%);
-
+        font-weight: bold;
         :hover {
             transform: scale(100%);
         }
@@ -60,7 +64,8 @@ const Principal = styled.div`
        p {
         text-align: left;
         margin-left: 7rem;
-       }
+        font-weight: bold;
+    }
     }
 
 `
@@ -100,32 +105,34 @@ const Icones = styled.div`
     }
 `
 
+
 export default function Landing() {
     return(
-        <Main>
+        <Main id='Home'>
             <Principal>
                 <Fade top>
                     <section>
                         <h1>Good Designer is Noticeable & Great Design is <span>Invisible.</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam autem tempora? Eos voluptas recusandae quod doloremque nobis repudiandae harum, eius, laudantium id laboriosam animi, libero quia doloribus autem perspiciatis.</p>
                         <article>
-                            <button>Explorar Agora</button>
+                            <a href="#Sobre"><button>Explorar Agora</button></a>
                         </article>
                         <Icones>
                             <a href="https://www.instagram.com/rrbb_edit/"><img src={InstagramIcon} alt="Instagram" /></a>
+                            <a href="https://wa.me/558388281791"><img src={WhatsappIcon} alt="Whatsapp" /></a>
                             <img src={GmailIcon} alt="Gmail" />
-                            <img src={WhatsappIcon} alt="Whatsapp" />
                         </Icones>
                     </section>
                 </Fade>              
                <Fade bottom>
                     <section>
-                        <img src={RBlogo} alt="RbLogo" />
+                        <img src={LogoNany} alt="RbLogo" />
                     </section>
+                    
                </Fade> 
             </Principal>
             <Esquerda>
-                <h2>Designer Portfolio</h2>
+                <h2>Designer Portfolio</h2>              
                 </Esquerda>
         </Main>
     )

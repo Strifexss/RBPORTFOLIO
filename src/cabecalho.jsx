@@ -1,19 +1,62 @@
 import styled from "styled-components"
 
 const Main = styled.div`
-    position: fixed;
     width: 100%;
     height: 3.5rem;
-    top: 0;
     display: flex;
-    justify-content: center;
+    bottom: 0;
+    justify-content: space-around;
     align-items: center;
-    background-color: #67159C;
+    color: #fff;
+    position: fixed;
+    opacity: 0.2;
+    transition: 0.1s;
+    margin-bottom: 5rem;
+    :hover {
+        opacity: 1;
+    }
+    p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        :hover {
+            color: #8f8f8f;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+        cursor: pointer;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            border: solid 1px #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 2rem;
+        }
+    }
 `
 export default function cabecalho() {
     return(
         <Main>
-            <h1>Teste</h1>
+            <section>
+            <a href="#Home"><p>Inicio</p></a>
+            <a href="#Sobre"><p>Sobre mim</p></a>
+            <a href="#Desenvolvo"><p>Desenvolvo</p></a>
+            </section>
         </Main>
     )
 }
