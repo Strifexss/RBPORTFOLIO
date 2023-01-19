@@ -1,6 +1,5 @@
 import { useState } from "react"
 import styled from "styled-components"
-import Giovanny from "../imgs/Giovanny.jpg"
 
 
 const Main = styled.div`
@@ -90,7 +89,7 @@ const TextosEsquerda = styled.div`
 
 `
 
-export default function ArtesComponents() {
+export default function ArtesComponents(props) {
 
     const [aberto, setAberto] = useState(false)
 
@@ -100,13 +99,13 @@ export default function ArtesComponents() {
                 <img onClick={() => {
                     setAberto(!aberto)
                     console.log(aberto)
-                }} src={Giovanny} alt="Arte" />
+                }} src={props.imagem} alt="Arte" />
             </div>
             <section>
                 <TextosEsquerda>
-                    <h1>01</h1>
+                    <h1>{props.numero}</h1>
                     <div>
-                        <h1>Cardapio</h1>
+                        <h1>{props.nome}</h1>
                     </div>
                 </TextosEsquerda>
             </section>

@@ -4,7 +4,8 @@ import {Fade} from "react-reveal"
 import InstagramIcon from ".//imgs/Icons/InstagramIcon.png"
 import GmailIcon from ".//imgs/Icons/GmailIcon.png"
 import WhatsappIcon from ".//imgs/Icons/WhatsappIcon.png"
-
+import Fundo from "./imgs/fundos/Fundo.jpg"
+import Fundos from "./imgs/fundos/NanyFundo.png"
 
 const Main = styled.div`
     width: 100%;
@@ -25,9 +26,8 @@ const Principal = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    background: rgb(2,2,2);
-    background: linear-gradient(25deg, rgba(2,2,2,1) 0%, rgba(29,29,29,1) 52%, rgba(47,47,47,1) 77%, rgba(70,70,70,1) 93%, rgba(100,100,100,1) 100%);
- 
+    background-size: contain;
+    background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
         display: flex;
         justify-content: center;
@@ -135,7 +135,6 @@ const Icones = styled.div`
         height: 3.8rem;
         margin-left: 1rem;
         margin-right: 1rem;
-
         transform: scale(90%);
         :hover {
             transform: scale(100%);
@@ -151,7 +150,12 @@ const Icones = styled.div`
 
 export default function Landing() {
     return(
-        <Main id='Home'>
+        <Main id='Home' style={{ 
+            backgroundImage: `url(https://img.freepik.com/vetores-gratis/fundo-escuro-de-hexagonos-minimos_79603-1455.jpg?w=1380&t=st=1674150145~exp=1674150745~hmac=e3d046ddb61418bf5db40c0d0d6bd4be05bc05098221065c135fd52d567199cd)`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            filter: "contrast(1.2)"
+          }}>
             <Principal>
                 <Fade top>
                     <section>

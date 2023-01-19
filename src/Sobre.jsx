@@ -7,7 +7,6 @@ const Main = styled.div`
     grid-template-columns: 85% 15%;
 
     @media screen and (max-width: 900px) {
-        display: none;
     }
 
     section {

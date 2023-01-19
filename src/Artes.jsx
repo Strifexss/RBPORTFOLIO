@@ -74,10 +74,10 @@ export default function Artes() {
                     <p>Passar o Mouse por cima das imagens para amplialas</p>
                 </Arte>
             <section>
-                <ArtesComponents/>
-                <ArtesComponents/>
-                <ArtesComponents/>
-                <ArtesComponents/>
+                <ArtesComponents numero = "1"/>
+                <ArtesComponents numero = "2"/>
+                <ArtesComponents numero = "3"/>
+                <ArtesComponents numero = "4"/>
             </section>
             </div>
             <Esquerda>
