@@ -1,24 +1,43 @@
 import styled from "styled-components"
 import DesenvolvoComponents from "./components/DesenvolvoComponents"
 import IconPc from "./imgs/Icons/DesignerPcIcon.png"
-import DesignerIcon from "./imgs/Icons/DesignerIcon.png"
 import IdentidadeVisualIcon from "./imgs/Icons/IdentidadeVisual.png"
 import ApresentacaoIcon from "./imgs/Icons/ApresentacaoIcon.png"
-import { Fade } from "react-reveal"
+import DesenhistaBranco from "./imgs/Icons/DesenhistaBranco.png"
+
+
 const Main = styled.div`
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 85% 15%;
 
+    @media screen and (max-width: 900px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30rem;
+        height: 95vh;
+    }
+
+    h3 {
+        color: #fff;
+    }
+
     section {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         h3 {
-            color: #841dc9;
+            color: #fff;
             font-size: 3rem;
+
+            @media screen and (max-width: 900px){
+                font-size: 1rem;
+            }
         }
     }
 
@@ -29,6 +48,14 @@ const Componentes = styled.div`
       grid-template-columns: 50% 50%;
       grid-template-rows: 50% 50%;
       padding: 3rem;
+
+      @media screen and (max-width: 900px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0rem;
+    }
     
 `
 
@@ -37,7 +64,10 @@ const Esquerda = styled.div`
     display: flex;
     justify-content: center; 
     align-items: center;
-        
+    
+    @media screen and (max-width: 900px){
+        visibility: hidden;
+    }
    
     h2 {
         color: black;
@@ -53,14 +83,12 @@ export default function Desenvolvo() {
         <Main id="Desenvolvo">
             <section>
                 <h3>Desenvolvo</h3>
-                <Fade top>
                 <Componentes>
                     <DesenvolvoComponents nome="Design Digital" numero="1" imagem={IconPc}/>
-                    <DesenvolvoComponents nome="Design Gráfico" numero="2" imagem={DesignerIcon}/>
+                    <DesenvolvoComponents nome="Design Gráfico" numero="2" imagem={DesenhistaBranco}/>
                     <DesenvolvoComponents nome="Identidade Visuais" numero="3" imagem={IdentidadeVisualIcon}/>
                     <DesenvolvoComponents nome="Apresentações" numero="4" imagem={ApresentacaoIcon}/>
              </Componentes>
-             </Fade>
             </section>
             <Esquerda>
                 <h2>O que eu desenvolvo?</h2>

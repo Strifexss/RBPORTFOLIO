@@ -13,6 +13,10 @@ width: 100%;
 margin: 5rem;
 
 
+@media screen and (max-width: 900px){
+    margin: 2.5rem;
+}
+
 img {
     width: 7rem;
     height: 8rem;
@@ -24,15 +28,20 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @media screen and (max-width: 900px){
+        align-items: center;
+    }
+
 }
 
 h1 {
     font-size: 3rem;
-    color: #841dc9;
+    color: #fff;
     margin-right: 1rem;
 }
     h2 {
-        color: #841dc9;
+        color: #fff;
         font-size: 1.8rem;
     }
 `
@@ -42,6 +51,15 @@ const Textos = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @media screen and (max-width: 900px){
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    p {
+        }
+}
+
 `
 
 export default function DesenvolvoComponents(props) {

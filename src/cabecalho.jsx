@@ -9,9 +9,14 @@ const Main = styled.div`
     align-items: center;
     color: #fff;
     position: fixed;
-    opacity: 0.2;
+    opacity: 0.3;
     transition: 0.1s;
     margin-bottom: 5rem;
+
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+
     :hover {
         opacity: 1;
     }
@@ -39,6 +44,7 @@ const Main = styled.div`
         justify-content: center;
         align-items: center;
         a {
+            margin: 1rem;
             border: solid 1px #fff;
             text-align: center;
             display: flex;
@@ -56,6 +62,7 @@ export default function cabecalho() {
             <a href="#Home"><p>Inicio</p></a>
             <a href="#Sobre"><p>Sobre mim</p></a>
             <a href="#Desenvolvo"><p>Desenvolvo</p></a>
+            <a href="#Artes"><p>Artes</p></a>
             </section>
         </Main>
     )

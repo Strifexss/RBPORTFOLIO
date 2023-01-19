@@ -6,6 +6,10 @@ const Main = styled.div`
     display: grid;
     grid-template-columns: 85% 15%;
 
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
     section {
         width: 100%;
         display: flex;
@@ -20,7 +24,10 @@ const Esquerda = styled.div`
     justify-content: center; 
     align-items: center;
         
-   
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
     h2 {
         color: black;
         transform: rotate(90deg);
@@ -35,6 +42,8 @@ const Borda = styled.div`
     border-radius: 1rem;
     display: grid;
 
+    @media screen and (max-width: 900px) {
+    }
 
     h1 {
         color: #fff;
@@ -46,6 +55,11 @@ const Flexar = styled.div`
     align-items: center;
     justify-content: center;
     margin: 1rem;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
     img {
         width: 25rem;
         height: 27rem;

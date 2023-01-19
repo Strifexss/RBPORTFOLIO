@@ -12,6 +12,12 @@ const Main = styled.div`
     display: grid;
     grid-template-columns: 85% 15%;
     scroll-snap-align: center;
+    @media screen and (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 `
 
 const Principal = styled.div`
@@ -22,10 +28,23 @@ const Principal = styled.div`
     background: rgb(2,2,2);
     background: linear-gradient(25deg, rgba(2,2,2,1) 0%, rgba(29,29,29,1) 52%, rgba(47,47,47,1) 77%, rgba(70,70,70,1) 93%, rgba(100,100,100,1) 100%);
  
+    @media screen and (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     img {
         width: 50rem;
         height: 40rem;
         transform: translateY(-5rem);
+
+        @media screen and (max-width: 900px) {
+            width: 25rem;
+            height: 20rem;
+            transform: translateY(-3rem);
+        }
     }
 
     section {
@@ -33,15 +52,20 @@ const Principal = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         h1 {
         font-size: 4rem;
         text-align: center;
         text-align: left;
         margin-left:7rem;
+        margin-top: 4rem;
+        @media screen and (max-width: 900px) {
+       font-size: 2.5rem;
+       text-align: center;
+       margin-left: 0;
+    }
 
         span {
-            color: #67159C;
+            color: #fff;
         }
     }
 
@@ -51,8 +75,8 @@ const Principal = styled.div`
         margin-top: 2rem;
         border: none;
         border-radius: 1rem;
-        background-color: #67159C;
-        color: #fff;
+        background-color: #fff;
+        color: black;
         cursor: pointer;
         transform: scale(90%);
         font-weight: bold;
@@ -64,7 +88,14 @@ const Principal = styled.div`
        p {
         text-align: left;
         margin-left: 7rem;
-        font-weight: bold;
+        font-weight: bold; 
+        
+
+        @media screen and (max-width: 900px) {
+           text-align: center;
+           margin-left: 0;
+            padding: 1%;
+        }
     }
     }
 
@@ -79,6 +110,10 @@ const Esquerda = styled.div`
     align-items: center;
     color: black;
 
+    @media screen and (max-width: 900px) {
+        visibility: hidden;
+    }
+
     h2 {
         transform: rotate(90deg);
         font-size: 2.5rem;
@@ -91,7 +126,10 @@ const Icones = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    @media screen and (max-width: 900px) {
+        margin-top: 0rem;
 
+    }
     img {
         width: 3.8rem;
         height: 3.8rem;
@@ -102,6 +140,11 @@ const Icones = styled.div`
         :hover {
             transform: scale(100%);
         }
+    }
+
+    @media screen and (max-width: 900px) {
+        margin: 1rem;
+
     }
 `
 
