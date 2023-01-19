@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/RBPORTFOLIO/static/css/main.ce852c84.css",
-    "main.js": "/RBPORTFOLIO/static/js/main.c1ec55be.js",
+    "main.js": "/RBPORTFOLIO/static/js/main.a39a9054.js",
     "static/media/NanyFundo.png": "/RBPORTFOLIO/static/media/NanyFundo.c661679a7eed5a544989.png",
     "static/media/Fundo.jpg": "/RBPORTFOLIO/static/media/Fundo.2ba0bad92f8ff4f658c5.jpg",
     "static/media/Cardapio1.jpeg": "/RBPORTFOLIO/static/media/Cardapio1.e8085b8e04e131d91c34.jpeg",
+    "static/media/Banners1.jpeg": "/RBPORTFOLIO/static/media/Banners1.3c6f891bfb9cd9f846c2.jpeg",
+    "static/media/Figurinha1.jpeg": "/RBPORTFOLIO/static/media/Figurinha1.3d147889bfac51d25c67.jpeg",
+    "static/media/Cronograma1.jpeg": "/RBPORTFOLIO/static/media/Cronograma1.7fb9199a5f475fbb5606.jpeg",
     "static/media/Cartoes1.jpeg": "/RBPORTFOLIO/static/media/Cartoes1.90985640e74a5fed54dd.jpeg",
-    "static/media/Giovanny.jpg": "/RBPORTFOLIO/static/media/Giovanny.4c43f4749140d8024a65.jpg",
     "static/media/LogoNanyPng.png": "/RBPORTFOLIO/static/media/LogoNanyPng.815f5cb163fc82be0f48.png",
     "index.html": "/RBPORTFOLIO/index.html",
     "main.ce852c84.css.map": "/RBPORTFOLIO/static/css/main.ce852c84.css.map",
-    "main.c1ec55be.js.map": "/RBPORTFOLIO/static/js/main.c1ec55be.js.map"
+    "main.a39a9054.js.map": "/RBPORTFOLIO/static/js/main.a39a9054.js.map"
   },
   "entrypoints": [
     "static/css/main.ce852c84.css",
-    "static/js/main.c1ec55be.js"
+    "static/js/main.a39a9054.js"
   ]
 }
