@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/RBPORTFOLIO/static/css/main.ce852c84.css",
-    "main.js": "/RBPORTFOLIO/static/js/main.8ca9ff09.js",
+    "main.js": "/RBPORTFOLIO/static/js/main.fc80942a.js",
     "static/media/Cardapio1.jpeg": "/RBPORTFOLIO/static/media/Cardapio1.e8085b8e04e131d91c34.jpeg",
     "static/media/Banner2.jpeg": "/RBPORTFOLIO/static/media/Banner2.c264573a4b9abbc37759.jpeg",
     "static/media/Figurinha2.jpeg": "/RBPORTFOLIO/static/media/Figurinha2.f1da7c61d51e06dda01f.jpeg",
     "static/media/Blackground.jpg": "/RBPORTFOLIO/static/media/Blackground.b80505b76d4b50273a5f.jpg",
     "static/media/Cronograma1.jpeg": "/RBPORTFOLIO/static/media/Cronograma1.7fb9199a5f475fbb5606.jpeg",
     "static/media/CartaoDeVisita.jpeg": "/RBPORTFOLIO/static/media/CartaoDeVisita.0f3e1ebae9cde230f409.jpeg",
-    "static/media/BlackBackground.jpg": "/RBPORTFOLIO/static/media/BlackBackground.6bae945fa8e26b56a7fe.jpg",
     "static/media/LogoNanyPng.png": "/RBPORTFOLIO/static/media/LogoNanyPng.815f5cb163fc82be0f48.png",
+    "static/media/FundoBranco.webp": "/RBPORTFOLIO/static/media/FundoBranco.dd63d1e669a28622a401.webp",
     "index.html": "/RBPORTFOLIO/index.html",
     "main.ce852c84.css.map": "/RBPORTFOLIO/static/css/main.ce852c84.css.map",
-    "main.8ca9ff09.js.map": "/RBPORTFOLIO/static/js/main.8ca9ff09.js.map"
+    "main.fc80942a.js.map": "/RBPORTFOLIO/static/js/main.fc80942a.js.map"
   },
   "entrypoints": [
     "static/css/main.ce852c84.css",
-    "static/js/main.8ca9ff09.js"
+    "static/js/main.fc80942a.js"
   ]
 }
