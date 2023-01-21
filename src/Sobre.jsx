@@ -1,127 +1,100 @@
 import styled from "styled-components"
-import Giovanny from "./imgs/Giovanny.jpg"
+import Logo from "./imgs/LogoNanyPng.png"
+import Gmail from "./imgs/Icons/GmailBlack.png"
+import Instagram from "./imgs/Icons/InstagramBlack.png"
+import FundoBranco from "./imgs/FundoBranco.webp"
+
 const Main = styled.div`
     width: 100%;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 85% 15%;
-
-    @media screen and (max-width: 900px) {
-    }
-
-    section {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-`
-
-const Esquerda = styled.div`
-    background-color: #FCFCFC;
-    display: flex;
-    justify-content: center; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-        
-    @media screen and (max-width: 900px) {
-        display: none;
-    }
-
-    h2 {
-        color: black;
-        transform: rotate(90deg);
-        font-size: 2.5rem;
-        white-space: nowrap;
-       
-}
-`
-const Borda = styled.div`
-    width: 80%;
-    border-top: solid 4px #fff;
-    border-radius: 1rem;
-    display: grid;
+    color: black;
 
     @media screen and (max-width: 900px) {
+        height: 130vh;
+        padding: 1rem;
+
+        h2 {
+            text-align: center;
+        }
     }
 
     h1 {
-        color: #fff;
+        margin-top: 2rem;
+        font-size: 3.5rem;
+
+        @media screen and (max-width: 900px){
+            text-align: center;
+        }
     }
-`
 
-const Flexar = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
+    h3 {
+        margin: 1rem;
 
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
+        @media screen and (max-width: 900px){
+            text-align: center;
+        }
+    }
+
+    p {
+        text-align: center;
     }
 
     img {
-        width: 25rem;
-        height: 27rem;
-        border-radius: 3.5rem;
-    }
+        width: 27rem;
+        height: 25rem;
+        background-color: black;
+        border-radius: 50%;
 
-    span {
-        color: #67159C;
-    }
-
-    article {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-left: 2rem;
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        h2 {
-            margin-top: 3rem;
-        }
-        p {
-            color: #a1a0a0;
+        @media screen and (max-width: 900px){
+            width: 23rem;
+            height: 23rem;
         }
     }
 `
 
+const Contato = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    section {
+        img {
+            margin: 1rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: #fff;
+        }
+    }
+    
+`
+
+
 export default function Sobre() {
     return(
-        <Main id="Sobre">
-            <section>
-                <Borda>
-                    <Flexar>
-                        <img src={Giovanny} alt="Pessoa" />
-                        <article>
-                            <h1><span>Giovanny Alvarino</span></h1>
-                            <h2><span>Sobre mim:</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsum dolorum dolor quasi doloremque officia perferendis natus. Culpa, ipsam accusantium minus cupiditate explicabo dolor ducimus. Ab quam ad alias asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint modi placeat perspiciatis quasi <br /> quam reiciendis veritatis necessitatibus <br /> doloribus labore dignissimos molestias est officiis ea mollitia a nisi, quia consequatur.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsum dolorum dolor quasi doloremque officia perferendis natus. Culpa, ipsam accusantium minus cupiditate explicabo dolor ducimus. Ab quam ad alias asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint modi placeat perspiciatis quasi <br /> quam reiciendis veritatis necessitatibus <br /> doloribus labore dignissimos molestias est officiis ea mollitia a nisi, quia consequatur.</p>
-                        </article>
-                    </Flexar>
-                    <Flexar>
-                        <article>
-                            <h2><span>Experiências:</span></h2>
-                            <ul>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsa autem dolorum debitis aliquid neque qui accusantium incidunt culpa quas perspiciatis, facere optio fugit facilis illum officiis sit eos alias?</p></li>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsa autem dolorum debitis aliquid neque qui accusantium incidunt culpa quas perspiciatis, facere optio fugit facilis illum officiis sit eos alias?</p></li>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ipsa autem dolorum debitis aliquid neque qui accusantium incidunt culpa quas perspiciatis, facere optio fugit facilis illum officiis sit eos alias?</p></li>
-                            </ul>
-                        </article>    
-                        <article>
-                        <h2><span>Cursos:</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsum dolorum dolor quasi doloremque officia perferendis natus. Culpa, ipsam accusantium minus cupiditate explicabo dolor ducimus. Ab quam ad alias asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint modi placeat perspiciatis quasi <br /> quam reiciendis veritatis necessitatibus <br /> doloribus labore dignissimos molestias est officiis ea mollitia a nisi, quia consequatur.</p>
-                        </article>                        
-                    </Flexar>
-                </Borda>
-            </section>
-            <Esquerda>
-                <h2>Sobre mim</h2>
-            </Esquerda>
+        <Main id="Contato" style={{ 
+            backgroundImage: `url(${FundoBranco})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}>   
+                <img src={Logo} alt="Logo" />
+                <h1>OI, SOMOS A RB EDIT</h1>
+                <h3>Designer Freelancer</h3>
+                <p>Procurando soluções e novas ideias para o seu projeto? <br /> Pois bem, meu objetivo é entender o seu <br /> negócio e criar soluções criativas de <br /> alta qualidade que ajudem a consolidar o sucesso <br /> da sua empresa</p>
+                <Contato>   
+                    <h1>Gostou?</h1>
+                    <h2>Então vamos fazer do seu projeto um sucesso.</h2>
+                    <h2>Entre em Contato com a gente</h2>
+                    <section>
+                       <a href="https://www.instagram.com/rrbb_edit/"><img src={Instagram} alt="Instagram" /></a>
+                        <img src={Gmail} alt="Gmail" />
+                    </section>
+                </Contato>
         </Main>
+        
     )
 }

@@ -60,9 +60,9 @@ export default function cabecalho() {
         <Main>
             <section>
             <a href="#Home"><p>Inicio</p></a>
-            <a href="#Sobre"><p>Sobre mim</p></a>
             <a href="#Desenvolvo"><p>Desenvolvo</p></a>
             <a href="#Artes"><p>Artes</p></a>
+            <a href="#Contato"><p>Contato</p></a>
             </section>
         </Main>
     )

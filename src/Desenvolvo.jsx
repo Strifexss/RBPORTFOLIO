@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import DesenvolvoComponents from "./components/DesenvolvoComponents"
-import IconPc from "./imgs/Icons/DesignerPcIcon.png"
-import IdentidadeVisualIcon from "./imgs/Icons/IdentidadeVisual.png"
-import ApresentacaoIcon from "./imgs/Icons/ApresentacaoIcon.png"
+import IconPc from "./imgs/Icons/DesignDigitalIcon.png"
+import ApresentacaoIcon from "./imgs/Icons/PresentationIcon.png"
 import DesenhistaBranco from "./imgs/Icons/DesenhistaBranco.png"
+import IdentidadeVisual from "./imgs/Icons/Squares.png"
 
 
 const Main = styled.div`
@@ -36,7 +36,7 @@ const Main = styled.div`
             font-size: 3rem;
 
             @media screen and (max-width: 900px){
-                font-size: 1rem;
+                font-size: 2rem;
             }
         }
     }
@@ -65,7 +65,7 @@ const Esquerda = styled.div`
     justify-content: center; 
     align-items: center;
     
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 1200px){
         visibility: hidden;
     }
    
@@ -84,10 +84,10 @@ export default function Desenvolvo() {
             <section>
                 <h3>Desenvolvo</h3>
                 <Componentes>
-                    <DesenvolvoComponents nome="Design Digital" numero="1" imagem={IconPc}/>
-                    <DesenvolvoComponents nome="Design Gráfico" numero="2" imagem={DesenhistaBranco}/>
-                    <DesenvolvoComponents nome="Identidade Visuais" numero="3" imagem={IdentidadeVisualIcon}/>
-                    <DesenvolvoComponents nome="Apresentações" numero="4" imagem={ApresentacaoIcon}/>
+                    <DesenvolvoComponents nome="Artes Personalizadas" numero="1" imagem={IconPc} texto="Mantenha o seu público sempre informado, apresentando temas atrativos e diversificados de modo a manter o interesse por parte deles."/>
+                    <DesenvolvoComponents nome="Posts Promocionais" numero="2" imagem={DesenhistaBranco} texto="Mantenha o seu público sempre informado, apresentando temas atrativos e diversificados de modo a manter o interesse por parte deles."/>
+                    <DesenvolvoComponents nome="Identidade Visuais" numero="3" imagem={IdentidadeVisual} texto="Ter identidade visual, é algo fundamental na sua empresa/marca, de modo a que o público-alvo consiga identificar com clareza e eficácia a sua marca no meio de tantas outras."/>
+                    <DesenvolvoComponents nome="Outros" numero="4" imagem={ApresentacaoIcon} texto="A RB Edição de imagens também oferece serviços de criação de Cardápio, figurinhas para whatsapp personalizadas, cartões de visita, flyers, folders, entre outros serviços."/>
              </Componentes>
             </section>
             <Esquerda>

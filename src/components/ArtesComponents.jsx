@@ -4,10 +4,10 @@ import styled from "styled-components"
 
 const Main = styled.div`
     width: 40rem;
-    height: 25rem;
+    height: 30rem;
     display: grid;
     grid-template-columns: 50% 50%;
-
+    margin-bottom: 1rem;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column;
@@ -19,13 +19,14 @@ const Main = styled.div`
 
     img {
         width: 20rem;
-        height: 25rem;
+        height: 30rem;
         cursor: pointer;
         transition: 0.1s ;
         :hover {
             transform: scale(150%);
             @media screen and (max-width: 900px){
                 transform: scale(100%);
+                height: 30rem;
             }
             
         }
@@ -45,7 +46,7 @@ const TextosEsquerda = styled.div`
         background-color: #111111;
         display: grid;
         grid-template-rows: 20% 80%;
-
+        
         @media screen and (max-width: 900px) {
             width: 20rem;
             display: flex;
@@ -56,7 +57,7 @@ const TextosEsquerda = styled.div`
 
 
             h1 {
-                color: #841dc9;
+                color: #fff;
                 font-size: 2rem;
                 margin: 2rem;
 
@@ -77,12 +78,10 @@ const TextosEsquerda = styled.div`
 
                 h1 {
                     color: #fff;
-                    transform: rotate(-90deg) translateX(3rem) translateY(5rem);
                     font-size: 2.5rem;
                     white-space: nowrap;
 
                     @media screen and (max-width: 900px) {
-                      transform: rotate(0deg);
         }
                 }
             }

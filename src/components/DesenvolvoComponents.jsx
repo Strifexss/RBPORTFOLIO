@@ -51,7 +51,7 @@ const Textos = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row;
-
+    padding: 1rem;
     @media screen and (max-width: 900px){
     flex-direction: column;
     text-align: center;
@@ -70,7 +70,7 @@ export default function DesenvolvoComponents(props) {
                 <h1>{props.numero}</h1>
                 <article>
                  <h2>{props.nome}</h2>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt ad velit unde <br /> ratione officia laboriosam dicta consequuntur placeat architecto</p>
+                <p>{props.texto}</p>
                 </article>
             </Textos>
         </Main>

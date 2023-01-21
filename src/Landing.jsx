@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 import LogoNany from './imgs/LogoNanyPng.png'
 import {Fade} from "react-reveal"
-import InstagramIcon from ".//imgs/Icons/InstagramIcon.png"
-import GmailIcon from ".//imgs/Icons/GmailIcon.png"
-import WhatsappIcon from ".//imgs/Icons/WhatsappIcon.png"
-import Fundo from "./imgs/fundos/Fundo.jpg"
-import Fundos from "./imgs/fundos/NanyFundo.png"
+import InstagramIcon from ".//imgs/Icons/InstagramIcon2.png"
+import GmailIcon from ".//imgs/Icons/GmailIcon2.png"
+import Blackground from "./imgs/Blackground.jpg"
 
 const Main = styled.div`
     width: 100%;
@@ -45,7 +43,15 @@ const Principal = styled.div`
             height: 20rem;
             transform: translateY(-3rem);
         }
+
+        @media screen and (min-width: 900px) and (max-width: 1550px) {
+            width: 40rem;
+            height: 35rem;
+            transform: translateY(-3rem);
+        }
     }
+        
+    
 
     section {
         display: flex;
@@ -62,6 +68,7 @@ const Principal = styled.div`
        font-size: 2.5rem;
        text-align: center;
        margin-left: 0;
+       margin-top: 8rem;
     }
 
         span {
@@ -74,9 +81,9 @@ const Principal = styled.div`
         height: 3.5rem;
         margin-top: 2rem;
         border: none;
-        border-radius: 1rem;
-        background-color: #fff;
-        color: black;
+        background-color: transparent;
+        border: 4px solid #fff;
+        color: #fff;
         cursor: pointer;
         transform: scale(90%);
         font-weight: bold;
@@ -110,7 +117,7 @@ const Esquerda = styled.div`
     align-items: center;
     color: black;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1200px) {
         visibility: hidden;
     }
 
@@ -151,22 +158,21 @@ const Icones = styled.div`
 export default function Landing() {
     return(
         <Main id='Home' style={{ 
-            backgroundImage: `url(https://img.freepik.com/vetores-gratis/fundo-escuro-de-hexagonos-minimos_79603-1455.jpg?w=1380&t=st=1674150145~exp=1674150745~hmac=e3d046ddb61418bf5db40c0d0d6bd4be05bc05098221065c135fd52d567199cd)`,
+            backgroundImage: `url(${Blackground})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            filter: "contrast(1.2)"
+            filter: "contrast(1.1)"
           }}>
             <Principal>
                 <Fade top>
                     <section>
-                        <h1>Good Designer is Noticeable & Great Design is <span>Invisible.</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam autem tempora? Eos voluptas recusandae quod doloremque nobis repudiandae harum, eius, laudantium id laboriosam animi, libero quia doloribus autem perspiciatis.</p>
+                        <h1>Designer Gráfico para mídias sociais</h1>
+                        <p>O design é um grande aliado das redes sociais, permitindo dar respostas criativas, criando a identidade visual de uma empresa/marca e, transmitindo sempre informações claras, objetivas e concisas, que possibilitem prender a atenção do cliente.</p>
                         <article>
-                            <a href="#Sobre"><button>Explorar Agora</button></a>
+                            <a href="#Desenvolvo"><button>Explorar Agora</button></a>
                         </article>
                         <Icones>
                             <a href="https://www.instagram.com/rrbb_edit/"><img src={InstagramIcon} alt="Instagram" /></a>
-                            <a href="https://wa.me/558388281791"><img src={WhatsappIcon} alt="Whatsapp" /></a>
                             <img src={GmailIcon} alt="Gmail" />
                         </Icones>
                     </section>
