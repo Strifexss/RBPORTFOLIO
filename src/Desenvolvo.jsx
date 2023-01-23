@@ -84,7 +84,7 @@ export default function Desenvolvo() {
             <section>
                 <h3>Desenvolvo</h3>
                 <Componentes>
-                    <DesenvolvoComponents nome="Artes Personalizadas" numero="1" imagem={IconPc} texto="Mantenha o seu público sempre informado, apresentando temas atrativos e diversificados de modo a manter o interesse por parte deles."/>
+                    <DesenvolvoComponents nome="Artes Personalizadas" numero="1" imagem={IconPc} texto="É algo essencial, pois permite que o público ao olhar para a publicação, consiga perceber a sua identidade da marca através dos detalhes visuais que observa na publicação."/>
                     <DesenvolvoComponents nome="Posts Promocionais" numero="2" imagem={DesenhistaBranco} texto="Mantenha o seu público sempre informado, apresentando temas atrativos e diversificados de modo a manter o interesse por parte deles."/>
                     <DesenvolvoComponents nome="Identidade Visuais" numero="3" imagem={IdentidadeVisual} texto="Ter identidade visual, é algo fundamental na sua empresa/marca, de modo a que o público-alvo consiga identificar com clareza e eficácia a sua marca no meio de tantas outras."/>
                     <DesenvolvoComponents nome="Outros" numero="4" imagem={ApresentacaoIcon} texto="A RB Edição de imagens também oferece serviços de criação de Cardápio, figurinhas para whatsapp personalizadas, cartões de visita, flyers, folders, entre outros serviços."/>

@@ -68,7 +68,7 @@ const Principal = styled.div`
        font-size: 2.5rem;
        text-align: center;
        margin-left: 0;
-       margin-top: 8rem;
+       margin-top: 11rem;
     }
 
         span {
